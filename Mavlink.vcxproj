@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9CC456BD-6AB8-441E-939A-BA764738E094}</ProjectGuid>
+    <RootNamespace>Mavlink</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>P:\Programme\Arduino\hardware\arduino\cores\arduino;P:\Programme\Arduino\hardware\arduino\variants\mega;C:\Users\Jonas\Documents\Arduino\Mavlink;C:\Users\Jonas\Documents\Arduino\libraries\FastSerial;C:\Users\Jonas\Documents\Arduino\libraries\FastSerial\utility;C:\Users\Jonas\Documents\Arduino\libraries\GCS_MAVLink;C:\Users\Jonas\Documents\Arduino\libraries\GCS_MAVLink\utility;P:\Programme\Arduino\libraries;P:\Programme\Arduino\hardware\arduino\libraries;P:\Programme (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\0pnp2kim.sqf\Micro Platforms\default\debuggers;C:\Users\Jonas\Documents\Arduino\libraries;p:\programme\arduino\hardware\tools\avr\avr\include\;p:\programme\arduino\hardware\tools\avr\avr\include\avr\;p:\programme\arduino\hardware\tools\avr\avr\;p:\programme\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\Jonas\Documents\Arduino\Mavlink\__vm\.Mavlink.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>__AVR_ATmega2560__;ARDUINO=106;ARDUINO_MAIN;__AVR__;__avr__;F_CPU=16000000L;__cplusplus=201103L;GCC_VERSION=40302;ARDUINO_ARCH_AVR;ARDUINO_AVR_MEGA2560;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>P:\Programme\Arduino\hardware\arduino\cores\arduino;P:\Programme\Arduino\hardware\arduino\variants\mega;C:\Users\Jonas\Documents\Arduino\Mavlink;C:\Users\Jonas\Documents\Arduino\libraries\FastSerial;C:\Users\Jonas\Documents\Arduino\libraries\FastSerial\utility;C:\Users\Jonas\Documents\Arduino\libraries\GCS_MAVLink;C:\Users\Jonas\Documents\Arduino\libraries\GCS_MAVLink\utility;P:\Programme\Arduino\libraries;P:\Programme\Arduino\hardware\arduino\libraries;P:\Programme (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\0pnp2kim.sqf\Micro Platforms\default\debuggers;C:\Users\Jonas\Documents\Arduino\libraries;p:\programme\arduino\hardware\tools\avr\avr\include\;p:\programme\arduino\hardware\tools\avr\avr\include\avr\;p:\programme\arduino\hardware\tools\avr\avr\;p:\programme\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>P:\Programme\Arduino\hardware\arduino\cores\arduino;P:\Programme\Arduino\hardware\arduino\variants\standard;C:\Users\Jonas\Documents\Arduino\Mavlink;C:\Users\Jonas\Documents\Arduino\libraries\FastSerial;C:\Users\Jonas\Documents\Arduino\libraries\FastSerial\utility;C:\Users\Jonas\Documents\Arduino\libraries\GCS_MAVLink;C:\Users\Jonas\Documents\Arduino\libraries\GCS_MAVLink\utility;P:\Programme\Arduino\libraries\SoftwareSerial;P:\Programme\Arduino\libraries\SoftwareSerial\utility;C:\Users\Jonas\Documents\Arduino\libraries\TinyGPS++;C:\Users\Jonas\Documents\Arduino\libraries\TinyGPS++\utility;C:\Users\Jonas\Documents\Arduino\libraries\TM1637Display;C:\Users\Jonas\Documents\Arduino\libraries\TM1637Display\utility;P:\Programme\Arduino\libraries;P:\Programme\Arduino\hardware\arduino\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\obh112g4.l1r\Micro Platforms\default\debuggers;C:\Users\Jonas\Documents\Arduino\libraries;p:\programme\arduino\hardware\tools\avr\avr\include\;p:\programme\arduino\hardware\tools\avr\avr\include\avr\;p:\programme\arduino\hardware\tools\avr\avr\;p:\programme\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\Jonas\Documents\Arduino\Mavlink\__vm\.Mavlink.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;ARDUINO=106;ARDUINO_MAIN;__AVR__;__avr__;F_CPU=16000000L;__cplusplus=201103L;GCC_VERSION=40302;ARDUINO_ARCH_AVR;ARDUINO_AVR_PRO5V328;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="Mavlink.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GK_in_WGS84.h" />
+    <ClInclude Include="WGS84_in_GK.h" />
+    <ClInclude Include="__vm\.Mavlink.vsarduino.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.maximum_size="30720" arduino.upload.speed="57600" visualmicro.package.name="arduino" arduino.board.property_bag="name=Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega328&#xD;&#xA;upload.protocol=arduino&#xD;&#xA;upload.maximum_size=30720&#xD;&#xA;upload.speed=57600&#xD;&#xA;bootloader.low_fuses=0xFF&#xD;&#xA;bootloader.high_fuses=0xDA&#xD;&#xA;bootloader.extended_fuses=0x05&#xD;&#xA;bootloader.path=atmega&#xD;&#xA;bootloader.file=ATmegaBOOT_168_atmega328.hex&#xD;&#xA;bootloader.unlock_bits=0x3F&#xD;&#xA;bootloader.lock_bits=0x0F&#xD;&#xA;build.mcu=atmega328p&#xD;&#xA;build.f_cpu=16000000L&#xD;&#xA;build.core=arduino&#xD;&#xA;build.variant=standard&#xD;&#xA;runtime.ide.path=P:\Programme\Arduino&#xD;&#xA;build.system.path=P:\Programme\Arduino\hardware\arduino\system&#xD;&#xA;runtime.ide.version=106&#xD;&#xA;target_package=arduino&#xD;&#xA;target_platform=avr&#xD;&#xA;runtime.hardware.path=P:\Programme\Arduino\hardware&#xD;&#xA;originalid=pro5v328&#xD;&#xA;vm.platform.root.path=C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\obh112g4.l1r\Micro Platforms\arduino10x&#xD;&#xA;avrisp.name=AVR ISP&#xD;&#xA;avrisp.communication=serial&#xD;&#xA;avrisp.protocol=stk500v1&#xD;&#xA;avrispmkii.name=AVRISP mkII&#xD;&#xA;avrispmkii.communication=usb&#xD;&#xA;avrispmkii.protocol=stk500v2&#xD;&#xA;usbtinyisp.name=USBtinyISP&#xD;&#xA;usbtinyisp.protocol=usbtiny&#xD;&#xA;usbasp.name=USBasp&#xD;&#xA;usbasp.communication=usb&#xD;&#xA;usbasp.protocol=usbasp&#xD;&#xA;parallel.name=Parallel Programmer&#xD;&#xA;parallel.protocol=dapa&#xD;&#xA;parallel.force=true&#xD;&#xA;arduinoisp.name=Arduino as ISP&#xD;&#xA;arduinoisp.communication=serial&#xD;&#xA;arduinoisp.protocol=stk500v1&#xD;&#xA;arduinoisp.speed=19200&#xD;&#xA;mysmartusb.name=mySmartUSB light&#xD;&#xA;mysmartusb.protocol=stk500v2&#xD;&#xA;mysmartusb.communication=serial&#xD;&#xA;ide.hint=For use with Arduino 0023 and 1.0.x versions&#xD;&#xA;ide.location.key=Arduino&#xD;&#xA;ide.location.ide.winreg=Arduino 1.0.x Application&#xD;&#xA;ide.location.sketchbook.winreg=Arduino 1.0.x Sketchbook&#xD;&#xA;ide.location.sketchbook.preferences=sketchbook.path&#xD;&#xA;ide.location.sketchbook.default=%MYDOCUMENTS%\arduino&#xD;&#xA;ide.location.preferences=%VM_APPDATA_ROAMING%\arduino\preferences.txt&#xD;&#xA;ide.default.package=arduino&#xD;&#xA;ide.default.platform=avr&#xD;&#xA;ide.multiplatform=true&#xD;&#xA;ide.includes=arduino.h&#xD;&#xA;ide.platformswithoutpackage=true&#xD;&#xA;ide.includes.fallback=wprogram.h&#xD;&#xA;ide.extension=ino&#xD;&#xA;ide.extension.fallback=pde&#xD;&#xA;ide.versionLTEQ=149&#xD;&#xA;ide.exe=arduino.exe&#xD;&#xA;ide.hosts=atmel&#xD;&#xA;ide.url=http://arduino.cc/en/Main/Software&#xD;&#xA;vm.debug=true&#xD;&#xA;software=ARDUINO&#xD;&#xA;ide.appid=arduino10x&#xD;&#xA;location.sketchbook=C:\Users\Jonas\Documents\Arduino&#xD;&#xA;vm.core.include=arduino.h&#xD;&#xA;build.board=AVR_PRO5V328&#xD;&#xA;vm.boardsource.path=P:\Programme\Arduino\hardware\arduino&#xD;&#xA;runtime.platform.path=P:\Programme\Arduino\hardware\arduino&#xD;&#xA;vm.platformname.name=avr&#xD;&#xA;build.arch=AVR&#xD;&#xA;" visualmicro.application.name="arduino10x" arduino.build.mcu="atmega328p" arduino.upload.protocol="arduino" arduino.build.f_cpu="16000000L" arduino.board.desc="Arduino Pro or Pro Mini (5V, 16 MHz) w/ ATmega328" arduino.board.name="pro5v328" arduino.upload.port="COM8" visualmicro.platform.name="avr" arduino.build.core="arduino" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
